@@ -13,7 +13,7 @@ import IconVue from "./main/IconVue.vue";
         lectus.
       </h6>
       <ButtonVue title="HIRE ME">
-        <IconVue name="streightFlash"></IconVue>
+        <IconVue name="streightFlash" active="true"></IconVue>
       </ButtonVue>
     </div>
     <div class="right">
