@@ -1,10 +1,17 @@
 @import "./base.css";
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background: #e5e5e5;
+}
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
+  font-family: "Inter", sans-serif;
   font-weight: normal;
 }
 
@@ -28,8 +35,6 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }
