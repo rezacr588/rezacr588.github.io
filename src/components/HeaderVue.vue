@@ -4,7 +4,7 @@ import IconVue from "./main/IconVue.vue";
 </script>
 
 <template>
-  <div class="container">
+  <section class="container">
     <div class="left">
       <h1 class="title">I’m Reza Zeraat <span>Software</span> Developer</h1>
       <h6 class="description">
@@ -19,7 +19,7 @@ import IconVue from "./main/IconVue.vue";
     <div class="right">
       <img src="../assets/profile-image.png" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
@@ -28,14 +28,13 @@ import IconVue from "./main/IconVue.vue";
   display: grid;
   flex: 1;
   grid-template-columns: 3fr 1fr;
-  width: 70%;
   padding: 0 3rem;
 }
 .title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 123.6%;
   color: #2b2b2b;
 }
@@ -44,7 +43,7 @@ import IconVue from "./main/IconVue.vue";
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 123.6%;
 }
 
@@ -54,8 +53,8 @@ import IconVue from "./main/IconVue.vue";
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   /* or 150% */
 
   text-transform: capitalize;
