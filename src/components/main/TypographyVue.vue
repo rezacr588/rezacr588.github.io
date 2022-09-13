@@ -12,6 +12,23 @@ export default {
     component: {
       type: String,
     },
+    color: {
+      type: String,
+      default: "#2B2B2B",
+    },
+  },
+  data() {
+    return {
+      colored: this.init_color,
+    };
+  },
+  computed: {
+    cssVar() {
+      console.log(this.colored);
+      return {
+        /* variables you want to pass to css */ "--color": this.colored,
+      };
+    },
   },
 };
 </script>
@@ -19,13 +36,14 @@ export default {
 <style scoped>
 h4 {
   /* H4 - 18px */
+
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 123.6%;
   text-transform: capitalize;
-  color: #2b2b2b;
+  color: var(--color);
 }
 p {
   /* Paragraph Progress - 15 */
@@ -35,13 +53,8 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  /* identical to box height, or 160% */
-
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
-
-  /* Paragraph Font */
-
-  color: #767676;
+  color: var(--color);
 }
 </style>
