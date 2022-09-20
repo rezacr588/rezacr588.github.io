@@ -6,7 +6,7 @@ import IconVue from "./main/IconVue.vue";
 <template>
   <section class="container">
     <div class="left">
-      <h1 class="title">I’m Reza Zeraat <span>Software</span> Developer</h1>
+      <h1 class="title">I’m Reza Zeraat <span>Full Stack</span> Developer</h1>
       <h6 class="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
         feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
@@ -29,6 +29,7 @@ import IconVue from "./main/IconVue.vue";
   flex: 1;
   grid-template-columns: 3fr 1fr;
   padding: 0 3rem;
+  height: fit-content;
 }
 .title {
   font-family: "Inter";
