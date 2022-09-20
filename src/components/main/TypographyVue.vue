@@ -14,20 +14,6 @@ export default {
     },
     color: {
       type: String,
-      default: "#2B2B2B",
-    },
-  },
-  data() {
-    return {
-      colored: this.init_color,
-    };
-  },
-  computed: {
-    cssVar() {
-      console.log(this.colored);
-      return {
-        /* variables you want to pass to css */ "--color": this.colored,
-      };
     },
   },
 };
@@ -43,7 +29,7 @@ h4 {
   font-size: 18px;
   line-height: 123.6%;
   text-transform: capitalize;
-  color: var(--color);
+  color: v-bind(color);
 }
 p {
   /* Paragraph Progress - 15 */
@@ -55,6 +41,6 @@ p {
   line-height: 24px;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
-  color: var(--color);
+  color: v-bind(color);
 }
 </style>
