@@ -11,7 +11,9 @@ import IconVue from "./main/IconVue.vue";
     <SpaceVue scope="block" size="16px" />
     <TypographyVue component="h4">Reza Zeraat</TypographyVue>
     <SpaceVue scope="block" size="8px" />
-    <TypographyVue component="p">Software Developer</TypographyVue>
+    <TypographyVue color="#767676" component="p">
+      Full Stack Developer
+    </TypographyVue>
     <SpaceVue scope="block" size="8px" />
     <div class="row">
       <IconVue name="facebook" active="true"></IconVue>
@@ -39,6 +41,8 @@ import IconVue from "./main/IconVue.vue";
         </div>
       </div>
     </div>
+    <hr />
+    <TypographyVue component="h4">Languages</TypographyVue>
   </section>
 </template>
 
