@@ -6,11 +6,16 @@ import IconVue from "./main/IconVue.vue";
 <template>
   <section class="container">
     <div class="left">
-      <h1 class="title">I’m Reza Zeraat <span>Full Stack</span> Developer</h1>
+      <h1 class="title">
+        I’m Reza Zeraat <br />
+        <span>Full Stack</span> Developer
+      </h1>
       <h6 class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-        feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-        lectus.
+        I am a hard working and ambitious man that loves to experience new
+        adventures, one of my greatest passions was Application Programming,
+        producing functional and appealing web applications on the internet.
+        When I didn't know anything about programming I always ask myself how
+        could I make this app better and astonishing
       </h6>
       <ButtonVue title="HIRE ME">
         <IconVue name="streightFlash" active="true"></IconVue>
