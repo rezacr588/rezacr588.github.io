@@ -6,6 +6,7 @@ import IconVue from "./main/IconVue.vue";
 import SidebarSectionVue from "./main/SidebarSectionVue.vue";
 import ProgressVue from "./main/ProgressVue.vue";
 import ExtraSkills from "./ExtraSkills.vue";
+import ButtonVue from "./main/ButtonVue.vue";
 </script>
 
 <template>
@@ -56,6 +57,12 @@ import ExtraSkills from "./ExtraSkills.vue";
     <SidebarSectionVue title="Extra Skills">
       <ExtraSkills :extraSkills="extraSkills" />
     </SidebarSectionVue>
+    <hr />
+    <ButtonVue>
+      <TypographyVue component="h4"> Download CV </TypographyVue>
+      <IconVue name="Download" active="true" />
+    </ButtonVue>
+    <SpaceVue scope="block" size="12px" />
   </section>
 </template>
 
