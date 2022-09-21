@@ -1,23 +1,18 @@
 <script setup>
-import TypographyVue from "./main/TypographyVue.vue";
-import SpaceVue from "./main/SpaceVue.vue";
+import TypographyVue from "./TypographyVue.vue";
 </script>
 <template>
-  <div class="container">
-    <TypographyVue component="h4">{{ title }}</TypographyVue>
-    <SpaceVue scope="block" size="8px" />
-    <div :key="item.id" v-for="item in list" class="item-container">
-      <div class="label">
-        <TypographyVue component="p" color="#767676">
-          {{ item.key }}
-        </TypographyVue>
-        <TypographyVue component="p" color="#767676">
-          {{ item.value }}%
-        </TypographyVue>
-      </div>
-      <div class="progress">
-        <div class="progress-bar" :style="`width: ${item.value}%`"></div>
-      </div>
+  <div :key="item.id" v-for="item in list" class="item-container">
+    <div class="label">
+      <TypographyVue component="p" color="#767676">
+        {{ item.key }}
+      </TypographyVue>
+      <TypographyVue component="p" color="#767676">
+        {{ item.value }}%
+      </TypographyVue>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" :style="`width: ${item.value}%`"></div>
     </div>
   </div>
 </template>
@@ -37,14 +32,6 @@ export default {
 };
 </script>
 <style scoped>
-.container {
-  padding: 16px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
 .item-container {
   width: 100%;
   margin: 0.3rem 0;

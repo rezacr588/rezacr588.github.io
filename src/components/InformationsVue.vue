@@ -3,7 +3,8 @@ import CircledImageVueVue from "./CircledImageVue.vue";
 import TypographyVue from "./main/TypographyVue.vue";
 import SpaceVue from "./main/SpaceVue.vue";
 import IconVue from "./main/IconVue.vue";
-import ProgressVue from "./ProgressVue.vue";
+import SidebarSectionVue from "./main/SidebarSectionVue.vue";
+import ProgressVue from "./main/ProgressVue.vue";
 </script>
 
 <template>
@@ -43,9 +44,13 @@ import ProgressVue from "./ProgressVue.vue";
       </div>
     </div>
     <hr />
-    <ProgressVue :list="languages" title="Languages" />
+    <SidebarSectionVue title="Languages">
+      <ProgressVue :list="languages" />
+    </SidebarSectionVue>
     <hr />
-    <ProgressVue :list="skills" title="Skills" />
+    <SidebarSectionVue title="Skills">
+      <ProgressVue :list="skills" />
+    </SidebarSectionVue>
     <hr />
   </section>
 </template>
