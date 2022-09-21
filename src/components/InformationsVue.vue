@@ -3,6 +3,7 @@ import CircledImageVueVue from "./CircledImageVue.vue";
 import TypographyVue from "./main/TypographyVue.vue";
 import SpaceVue from "./main/SpaceVue.vue";
 import IconVue from "./main/IconVue.vue";
+import ProgressVue from "./ProgressVue.vue";
 </script>
 
 <template>
@@ -35,14 +36,17 @@ import IconVue from "./main/IconVue.vue";
           <TypographyVue component="p">{{ data.key + ":" }}</TypographyVue>
         </div>
         <div class="value">
-          <TypographyVue component="p" color="data.color">{{
-            data.value
-          }}</TypographyVue>
+          <TypographyVue component="p" color="data.color">
+            {{ data.value }}
+          </TypographyVue>
         </div>
       </div>
     </div>
     <hr />
-    <TypographyVue component="h4">Languages</TypographyVue>
+    <ProgressVue :list="languages" title="Languages" />
+    <hr />
+    <ProgressVue :list="skills" title="Skills" />
+    <hr />
   </section>
 </template>
 
@@ -55,6 +59,22 @@ export default {
         { id: 2, key: "Residence", value: "Turkey" },
         { id: 3, key: "Freelance", value: "Available", color: "#7EB942" },
         { id: 4, key: "Address", value: "Duzce, Konuralp" },
+      ],
+      languages: [
+        { id: 1, key: "Persion", value: 100 },
+        { id: 2, key: "English", value: 70 },
+        { id: 3, key: "Turkish", value: 70 },
+        { id: 4, key: "Arabic", value: 50 },
+      ],
+      skills: [
+        { id: 1, key: "React", value: 95 },
+        { id: 2, key: "Node.js", value: 85 },
+        { id: 3, key: "MongoDB", value: 76 },
+        { id: 4, key: "Postgresql", value: 90 },
+        { id: 5, key: "JavaScript", value: 90 },
+        { id: 6, key: "Typescript", value: 90 },
+        { id: 7, key: "AWS", value: 60 },
+        { id: 8, key: "Python", value: 70 },
       ],
     };
   },
