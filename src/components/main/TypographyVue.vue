@@ -2,9 +2,15 @@
   <h4 v-if="component === 'h4'">
     <slot></slot>
   </h4>
+  <h1 v-if="component === 'h1'">
+    <slot></slot>
+  </h1>
   <p v-if="component === 'p'">
     <slot></slot>
   </p>
+  <h6 v-if="component === 'h6'">
+    <slot></slot>
+  </h6>
 </template>
 <script>
 export default {
@@ -20,9 +26,23 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 123.6%;
+  color: #2b2b2b;
+}
+h1 > span {
+  color: #ffb400;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 123.6%;
+}
 h4 {
-  /* H4 - 18px */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -32,8 +52,6 @@ h4 {
   color: v-bind(color);
 }
 p {
-  /* Paragraph Progress - 15 */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -42,5 +60,16 @@ p {
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
   color: v-bind(color);
+}
+
+h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+  color: #767676;
 }
 </style>
