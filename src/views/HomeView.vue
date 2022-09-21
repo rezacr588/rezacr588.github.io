@@ -15,7 +15,7 @@ import NavbarVue from "../components/NavbarVue.vue";
 <style scoped>
 .layout {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 2fr 8fr 1fr;
   gap: 2rem;
 }
 </style>
