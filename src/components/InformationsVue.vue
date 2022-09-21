@@ -5,6 +5,7 @@ import SpaceVue from "./main/SpaceVue.vue";
 import IconVue from "./main/IconVue.vue";
 import SidebarSectionVue from "./main/SidebarSectionVue.vue";
 import ProgressVue from "./main/ProgressVue.vue";
+import ExtraSkills from "./ExtraSkills.vue";
 </script>
 
 <template>
@@ -52,6 +53,9 @@ import ProgressVue from "./main/ProgressVue.vue";
       <ProgressVue :list="skills" />
     </SidebarSectionVue>
     <hr />
+    <SidebarSectionVue title="Extra Skills">
+      <ExtraSkills :extraSkills="extraSkills" />
+    </SidebarSectionVue>
   </section>
 </template>
 
@@ -67,7 +71,7 @@ export default {
       ],
       languages: [
         { id: 1, key: "Persion", value: 100 },
-        { id: 2, key: "English", value: 70 },
+        { id: 2, key: "English", value: 80 },
         { id: 3, key: "Turkish", value: 70 },
         { id: 4, key: "Arabic", value: 50 },
       ],
@@ -80,6 +84,13 @@ export default {
         { id: 6, key: "Typescript", value: 90 },
         { id: 7, key: "AWS", value: 60 },
         { id: 8, key: "Python", value: 70 },
+        { id: 9, key: "Java", value: 50 },
+      ],
+      extraSkills: [
+        { id: 1, text: "Next.js, Redux" },
+        { id: 2, text: "Nestjs, Laravel" },
+        { id: 3, text: "React Native, Flutter" },
+        { id: 4, text: "Git, Gitlab, Jira" },
       ],
     };
   },
