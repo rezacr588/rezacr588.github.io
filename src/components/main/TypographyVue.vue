@@ -2,6 +2,9 @@
   <h4 v-if="component === 'h4'">
     <slot></slot>
   </h4>
+  <span v-if="component === 'span'">
+    <slot></slot>
+  </span>
   <h1 v-if="component === 'h1'">
     <slot></slot>
   </h1>
@@ -34,7 +37,7 @@ h1 {
   line-height: 123.6%;
   color: #2b2b2b;
 }
-h1 > span {
+span {
   color: #ffb400;
   font-family: "Inter";
   font-style: normal;

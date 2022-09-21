@@ -9,7 +9,7 @@ import TypographyVue from "./main/TypographyVue.vue";
     <div class="left">
       <TypographyVue component="h1">
         I’m Reza Zeraat <br />
-        <span>Full Stack</span> Developer
+        <TypographyVue component="span">Full Stack</TypographyVue> Developer
       </TypographyVue>
       <TypographyVue component="h6">
         I am a hard working and ambitious man that loves to experience new
