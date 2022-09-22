@@ -14,6 +14,9 @@
   <h6 v-if="component === 'h6'">
     <slot></slot>
   </h6>
+  <h5 v-if="component === 'h5'">
+    <slot></slot>
+  </h5>
 </template>
 <script>
 export default {
@@ -35,15 +38,15 @@ h1 {
   font-weight: 700;
   font-size: 35px;
   line-height: 123.6%;
-  color: #2b2b2b;
+  color: v-bind(color);
 }
 span {
-  color: #ffb400;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
   line-height: 123.6%;
+  color: v-bind(color);
 }
 h4 {
   font-family: "Inter";
@@ -73,6 +76,15 @@ h6 {
   line-height: 20px;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
-  color: #767676;
+  color: v-bind(color);
+}
+
+h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: v-bind(color);
 }
 </style>
