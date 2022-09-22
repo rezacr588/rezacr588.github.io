@@ -22,7 +22,7 @@ import TypographyVue from "./main/TypographyVue.vue";
       </ButtonVue>
     </div>
     <div class="right">
-      <img src="../assets/profile-image.png" />
+      <img src="../assets/header.jpeg" />
     </div>
   </section>
 </template>

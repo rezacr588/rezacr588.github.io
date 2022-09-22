@@ -1,6 +1,6 @@
 <template>
   <div class="image-container">
-    <img class="circled-image" src="../assets/profile-image-circled.png" />
+    <img class="circled-image" src="../assets/profile.jpg" />
   </div>
 </template>
 
@@ -9,6 +9,8 @@
   border-radius: 50%;
   position: relative;
   display: block;
+  width: 150px;
+  height: 150px;
 }
 .image-container {
   height: fit-content;
