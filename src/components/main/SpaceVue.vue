@@ -8,9 +8,11 @@ export default {
   props: {
     size: {
       type: String,
+      default: ".5rem",
     },
     scope: {
       type: String,
+      default: "block",
     },
   },
 };
