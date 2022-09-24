@@ -1,6 +1,7 @@
 <script setup>
 import Typography from "../main/TypographyVue.vue";
 import SpaceVue from "../main/SpaceVue.vue";
+import ServiceContainer from "./Services/ServiceContainer.vue";
 
 const services = [
   {
@@ -47,18 +48,8 @@ const services = [
       Thier scope were from small to large scale applications. <br />
       I have worked with different technologies and frameworks.
     </Typography>
-    <SpaceVue />
-    <div>
-      <div :key="service.title" v-for="service in services">
-        <Typography component="h3" color="#2B2B2B">
-          {{ service.title }}
-        </Typography>
-        <Typography component="p" color="#767676">
-          <span v-html="service.description"></span>
-        </Typography>
-        <SpaceVue />
-      </div>
-    </div>
+    <SpaceVue size="2rem" />
+    <ServiceContainer :services="services" />
   </section>
 </template>
 <style scoped>
