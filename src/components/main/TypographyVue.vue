@@ -8,6 +8,9 @@
   <h1 v-if="component === 'h1'">
     <slot></slot>
   </h1>
+  <h1 v-if="component === 'h2'">
+    <slot></slot>
+  </h1>
   <p v-if="component === 'p'">
     <slot></slot>
   </p>
@@ -46,6 +49,17 @@ span {
   font-weight: 700;
   font-size: 35px;
   line-height: 123.6%;
+  color: v-bind(color);
+}
+h2 {
+  /* H2 - 32px */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
   color: v-bind(color);
 }
 h4 {
