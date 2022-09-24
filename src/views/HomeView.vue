@@ -1,13 +1,13 @@
 <script setup>
-import HeaderVue from "../components/HeaderVue.vue";
 import InformationsVue from "../components/InformationsVue.vue";
 import NavbarVue from "../components/NavbarVue.vue";
+import MainSections from "@/components/Sections/MainSections.vue";
 </script>
 
 <template>
   <main class="layout">
     <InformationsVue />
-    <HeaderVue />
+    <MainSections />
     <NavbarVue />
   </main>
 </template>

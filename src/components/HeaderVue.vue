@@ -5,7 +5,7 @@ import TypographyVue from "./main/TypographyVue.vue";
 </script>
 
 <template>
-  <section class="container">
+  <section id="Home" class="container">
     <div class="left">
       <TypographyVue component="h1">
         I’m Reza Zeraat <br />
