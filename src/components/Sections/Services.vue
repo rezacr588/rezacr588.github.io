@@ -52,9 +52,3 @@ const services = [
     <ServiceContainer :services="services" />
   </SectionBodyLayout>
 </template>
-<style scoped>
-section {
-  margin: 70px auto;
-  text-align: center;
-}
-</style>

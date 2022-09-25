@@ -15,3 +15,10 @@ const props = defineProps(["id", "title", "description"]);
     <slot></slot>
   </section>
 </template>
+
+<style scoped>
+section {
+  margin: 70px auto;
+  text-align: center;
+}
+</style>
