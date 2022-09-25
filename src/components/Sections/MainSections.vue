@@ -1,12 +1,12 @@
 <script setup>
-import Services from "./Services.vue";
 import HeaderVue from "../HeaderVue.vue";
-import Prices from "./Prices.vue";
+import PricesSection from "./PricesSection.vue";
+import ServicesSection from "./ServicesSection.vue";
 </script>
 <template>
   <main>
     <HeaderVue />
-    <Services />
-    <Prices />
+    <ServicesSection />
+    <PricesSection />
   </main>
 </template>
