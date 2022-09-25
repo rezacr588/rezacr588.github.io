@@ -1,7 +1,6 @@
 <script setup>
-import Typography from "../main/TypographyVue.vue";
-import SpaceVue from "../main/SpaceVue.vue";
 import ServiceContainer from "./Services/ServiceContainer.vue";
+import SectionBodyLayout from "../main/SectionBodyLayout.vue";
 
 const services = [
   {
@@ -45,18 +44,13 @@ const services = [
 ];
 </script>
 <template>
-  <section id="services">
-    <Typography component="h2" color="#2B2B2B"> Services </Typography>
-    <SpaceVue />
-    <Typography component="p" color="#767676">
-      I have a lot of experience in building different kind of applications.
-      <br />
-      Thier scope were from small to large scale applications. <br />
-      I have worked with different technologies and frameworks.
-    </Typography>
-    <SpaceVue size="2rem" />
+  <SectionBodyLayout
+    id="services"
+    title="What I Offer"
+    description="I can help you build a product, feature or website. Look through some of my expertise below."
+  >
     <ServiceContainer :services="services" />
-  </section>
+  </SectionBodyLayout>
 </template>
 <style scoped>
 section {
