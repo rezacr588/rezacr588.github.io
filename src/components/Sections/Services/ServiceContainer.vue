@@ -19,6 +19,7 @@ export default {
       :title="service.title"
       :description="service.description"
       :icon="service.icon"
+      :keywords="service.keywords"
     />
   </div>
 </template>
