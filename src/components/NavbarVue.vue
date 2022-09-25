@@ -11,7 +11,7 @@ import TypographyVue from "./main/TypographyVue.vue";
     </div>
     <div id="second">
       <div :key="button.name" v-for="button in buttons">
-        <IconButton :icon="button.icon">
+        <IconButton @click="goto(button.ref)" :icon="button.icon">
           <template #pop-up>
             <TypographyVue component="h5" color="white">
               {{ button.name }}
@@ -27,32 +27,45 @@ import TypographyVue from "./main/TypographyVue.vue";
 <script>
 export default {
   name: "NavbarVue",
+  methods: {
+    goto(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+      });
+    },
+  },
   data: function () {
     return {
       buttons: [
         {
           name: "Home",
           icon: "Home",
+          ref: "home",
         },
         {
           name: "Services",
           icon: "Services",
+          ref: "services",
         },
         {
           name: "Edu",
           icon: "Edu",
+          ref: "edu",
         },
         {
           name: "Portfolio",
           icon: "Portfolio",
+          ref: "portfolio",
         },
         {
           name: "Contact",
           icon: "Contact",
+          ref: "contact",
         },
         {
           name: "Blog",
           icon: "Blog",
+          ref: "blog",
         },
       ],
     };
