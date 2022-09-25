@@ -11,6 +11,9 @@
   <h1 v-if="component === 'h2'">
     <slot></slot>
   </h1>
+  <h3 v-if="component === 'h3'">
+    <slot></slot>
+  </h3>
   <p v-if="component === 'p'">
     <slot></slot>
   </p>
@@ -26,9 +29,11 @@ export default {
   props: {
     component: {
       type: String,
+      required: true,
     },
     color: {
       type: String,
+      default: "#2B2B2B",
     },
   },
 };
@@ -41,6 +46,15 @@ h1 {
   font-weight: 700;
   font-size: 35px;
   line-height: 123.6%;
+  color: v-bind(color);
+}
+h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 123.6%;
+  text-transform: capitalize;
   color: v-bind(color);
 }
 span {
