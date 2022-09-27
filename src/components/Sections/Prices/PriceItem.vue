@@ -20,21 +20,26 @@ const props = defineProps([
     </TypographyVue>
     <SpaceVue />
     <div class="row">
-      <TypographyVue component="h4">
+      <TypographyVue component="h2">
         {{ props.rate }}
       </TypographyVue>
       <TypographyVue component="p"> /hour </TypographyVue>
     </div>
     <SpaceVue />
-    <TypographyVue component="p" color="#767676">
-      {{ props.description }}
-    </TypographyVue>
+    <div class="row">
+      <SpaceVue />
+      <TypographyVue component="p" color="#767676">
+        {{ props.description }}
+      </TypographyVue>
+      <SpaceVue />
+    </div>
     <SpaceVue />
-    <ul>
-      <li v-for="feature in props.features" :key="feature.title">
-        <TypographyVue component="p" color="#767676">
-          {{ feature.title }}
-        </TypographyVue>
+    <ul class="list">
+      <li
+        class="list-item"
+        v-for="feature in props.features"
+        :key="feature.title"
+      >
         <SpaceVue />
         <div class="checkmark" v-if="feature.checked">
           <svg
@@ -50,7 +55,7 @@ const props = defineProps([
             />
           </svg>
         </div>
-        <div class="uncheck" v-else>
+        <div class="removed" v-else>
           <svg
             width="14"
             height="14"
@@ -59,14 +64,15 @@ const props = defineProps([
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M1.33333 7H12.6667M7 1.33333V12.6667"
+              d="M1.33333 1.33333L12.6667 12.6667M12.6667 1.33333L1.33333 12.6667"
               stroke="#767676"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
             />
           </svg>
         </div>
+        <SpaceVue />
+        <TypographyVue component="p" color="#767676">
+          {{ feature.title }}
+        </TypographyVue>
       </li>
     </ul>
   </div>
@@ -75,18 +81,27 @@ const props = defineProps([
 <style scoped>
 .row {
   display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 .popular-ticket {
   background: #ffb400;
   padding: 10px;
-  border-radius: 5px;
   margin-bottom: 10px;
 }
 .item-container {
   background: #fff;
-  border-radius: 10px;
-  padding: 20px;
+  text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
 }
 </style>
