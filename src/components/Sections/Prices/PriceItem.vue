@@ -55,6 +55,11 @@ const props = defineProps([
         </TypographyVue>
       </li>
     </ul>
+    <SpaceVue />
+    <button :class="`order-button ${props.popular ? 'active' : 'passive'}`">
+      ORDER NOW
+    </button>
+    <SpaceVue />
   </div>
 </template>
 
@@ -83,5 +88,27 @@ const props = defineProps([
   display: flex;
   align-items: center;
   padding: 10px 0;
+}
+
+.order-button {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  outline: none;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.active {
+  background: #ffb400;
+}
+.passive {
+  background: #ffffff;
 }
 </style>
