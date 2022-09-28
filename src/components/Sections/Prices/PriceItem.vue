@@ -1,6 +1,8 @@
 <script setup>
 import TypographyVue from "@/components/main/TypographyVue.vue";
 import SpaceVue from "@/components/main/SpaceVue.vue";
+import IconRemove from "@/components/icons/IconRemove.vue";
+import IconChecked from "../../icons/IconChecked.vue";
 const props = defineProps([
   "title",
   "rate",
@@ -42,32 +44,10 @@ const props = defineProps([
       >
         <SpaceVue />
         <div class="checkmark" v-if="feature.checked">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.66667 11.3333L2.66667 8.33333L1.33333 9.66667L5.66667 14L12.6667 7L11.3333 5.66667L5.66667 11.3333Z"
-              fill="#FFB400"
-            />
-          </svg>
+          <IconChecked />
         </div>
         <div class="removed" v-else>
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.33333 1.33333L12.6667 12.6667M12.6667 1.33333L1.33333 12.6667"
-              stroke="#767676"
-            />
-          </svg>
+          <IconRemove />
         </div>
         <SpaceVue />
         <TypographyVue component="p" color="#767676">
