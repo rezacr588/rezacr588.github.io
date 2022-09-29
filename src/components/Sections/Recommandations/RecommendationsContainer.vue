@@ -1,24 +1,26 @@
 <script>
+import RecommendationItem from "./RecommendationItem.vue";
 export default {
   props: {
-    persons: {
+    recommendations: {
       type: Array,
       required: true,
     },
   },
+  components: { RecommendationItem },
 };
 </script>
 <template>
   <div class="container">
     <RecommendationItem
-      v-for="person in persons"
-      :key="person.opinion.title"
-      :title="person.opinion.title"
-      :description="person.opinion.description"
-      :score="person.opinion.score"
-      :name="person.name"
-      :job="person.jobTitle"
-      :picture="person.picture"
+      v-for="recommendation in recommendations"
+      :key="recommendation.opinion.title"
+      :title="recommendation.opinion.title"
+      :description="recommendation.opinion.description"
+      :score="recommendation.opinion.score"
+      :name="recommendation.name"
+      :job="recommendation.jobTitle"
+      :picture="recommendation.picture"
     />
   </div>
 </template>

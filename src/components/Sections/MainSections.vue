@@ -2,11 +2,13 @@
 import HeaderVue from "../HeaderVue.vue";
 import PricesSection from "./PricesSection.vue";
 import ServicesSection from "./ServicesSection.vue";
+import RecommendationsSection from "./RecommendationsSection.vue";
 </script>
 <template>
   <main>
     <HeaderVue />
     <ServicesSection />
     <PricesSection />
+    <RecommendationsSection />
   </main>
 </template>
