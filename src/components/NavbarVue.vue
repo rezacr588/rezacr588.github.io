@@ -5,7 +5,7 @@ import IconButton from "./main/IconButton.vue";
 import TypographyVue from "./main/TypographyVue.vue";
 </script>
 <template>
-  <section class="container">
+  <nav class="container">
     <div id="first">
       <IconContrastVue />
     </div>
@@ -21,7 +21,7 @@ import TypographyVue from "./main/TypographyVue.vue";
         <SpaceVue />
       </div>
     </div>
-  </section>
+  </nav>
 </template>
 
 <script>
