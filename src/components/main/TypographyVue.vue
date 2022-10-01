@@ -1,28 +1,28 @@
 <template>
-  <h4 v-if="component === 'h4'">
-    <slot></slot>
-  </h4>
-  <span v-if="component === 'span'">
-    <slot></slot>
-  </span>
   <h1 v-if="component === 'h1'">
     <slot></slot>
   </h1>
-  <h1 v-if="component === 'h2'">
+  <h2 v-else-if="component === 'h2'">
     <slot></slot>
-  </h1>
-  <h3 v-if="component === 'h3'">
+  </h2>
+  <h3 v-else-if="component === 'h3'">
     <slot></slot>
   </h3>
-  <p v-if="component === 'p'">
+  <h4 v-else-if="component === 'h4'">
     <slot></slot>
-  </p>
-  <h6 v-if="component === 'h6'">
-    <slot></slot>
-  </h6>
-  <h5 v-if="component === 'h5'">
+  </h4>
+  <h5 v-else-if="component === 'h5'">
     <slot></slot>
   </h5>
+  <h6 v-else-if="component === 'h6'">
+    <slot></slot>
+  </h6>
+  <p v-else-if="component === 'p'">
+    <slot></slot>
+  </p>
+  <span v-else>
+    <slot></slot>
+  </span>
 </template>
 <script>
 export default {
@@ -66,8 +66,6 @@ span {
   color: v-bind(color);
 }
 h2 {
-  /* H2 - 32px */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -95,7 +93,6 @@ p {
   font-feature-settings: "calt" off, "kern" off;
   color: v-bind(color);
 }
-
 h6 {
   font-family: "Inter";
   font-style: normal;
@@ -106,7 +103,6 @@ h6 {
   font-feature-settings: "calt" off, "kern" off;
   color: v-bind(color);
 }
-
 h5 {
   font-family: "Inter";
   font-style: normal;
