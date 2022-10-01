@@ -3,10 +3,10 @@ import CircledImageVueVue from "./CircledImageVue.vue";
 import TypographyVue from "./main/TypographyVue.vue";
 import SpaceVue from "./main/SpaceVue.vue";
 import IconVue from "./main/IconVue.vue";
-import SidebarSectionVue from "./main/SidebarSectionVue.vue";
 import ProgressVue from "./main/ProgressVue.vue";
 import ExtraSkills from "./ExtraSkills.vue";
 import ButtonVue from "./main/ButtonVue.vue";
+import SidebarSectionLayout from "./layouts/SidebarSectionLayout.vue";
 </script>
 
 <template>
@@ -46,9 +46,9 @@ import ButtonVue from "./main/ButtonVue.vue";
       </div>
     </div>
     <hr />
-    <SidebarSectionVue title="Languages">
+    <SidebarSectionLayout title="Languages">
       <ProgressVue :list="languages" />
-    </SidebarSectionVue>
+    </SidebarSectionLayout>
     <hr />
     <SidebarSectionVue title="Skills">
       <ProgressVue :list="skills" />

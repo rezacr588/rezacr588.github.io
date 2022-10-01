@@ -1,10 +1,10 @@
 <script setup>
-import TypographyVueVue from "./TypographyVue.vue";
-import SpaceVue from "./SpaceVue.vue";
+import TypographyVue from "../main/TypographyVue.vue";
+import SpaceVue from "../main/SpaceVue.vue";
 </script>
 <template>
   <div class="container">
-    <TypographyVueVue component="h4">{{ title }}</TypographyVueVue>
+    <TypographyVue component="h4">{{ title }}</TypographyVue>
     <SpaceVue scope="block" size="4px" />
     <slot></slot>
   </div>

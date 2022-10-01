@@ -1,6 +1,6 @@
 <script setup>
-import TypographyVue from "./TypographyVue.vue";
-import SpaceVue from "./SpaceVue.vue";
+import TypographyVue from "../main/TypographyVue.vue";
+import SpaceVue from "../main/SpaceVue.vue";
 defineProps({
   data: {
     type: Array,

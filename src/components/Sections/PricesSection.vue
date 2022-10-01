@@ -1,7 +1,7 @@
 <script setup>
 import { prices } from "@/data";
-import SectionBodyLayout from "../main/SectionBodyLayout.vue";
 import PricesContainer from "./Prices/PricesContainer.vue";
+import SectionBodyLayout from "../layouts/SectionBodyLayout.vue";
 </script>
 
 <template>

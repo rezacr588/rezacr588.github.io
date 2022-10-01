@@ -48,9 +48,9 @@ export default {
           ref: "services",
         },
         {
-          name: "Edu",
+          name: "Education",
           icon: "Edu",
-          ref: "edu",
+          ref: "education",
         },
         {
           name: "Portfolio",

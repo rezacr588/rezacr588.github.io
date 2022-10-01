@@ -1,6 +1,6 @@
 <script setup>
 import ServiceContainer from "./Services/ServiceContainer.vue";
-import SectionBodyLayout from "../main/SectionBodyLayout.vue";
+import SectionBodyLayout from "../layouts/SectionBodyLayout.vue";
 import { services } from "@/data";
 </script>
 <template>

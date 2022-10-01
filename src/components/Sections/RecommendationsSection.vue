@@ -1,7 +1,7 @@
 <script setup>
 import { recommendations } from "@/data";
 import RecommendationsContainer from "./Recommandations/RecommendationsContainer.vue";
-import SectionBodyLayout from "../main/SectionBodyLayout.vue";
+import SectionBodyLayout from "../layouts/SectionBodyLayout.vue";
 </script>
 <template>
   <SectionBodyLayout
