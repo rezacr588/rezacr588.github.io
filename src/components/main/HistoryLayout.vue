@@ -11,10 +11,11 @@ defineProps({
 <template>
   <ul class="list">
     <li :key="item.id" v-for="item in data" class="list-item">
-      <div>
+      <div class="left-side">
         <TypographyVue component="h4" color="#2B2B2B">
           {{ item.place }}
         </TypographyVue>
+        <SpaceVue />
         <div class="row">
           <TypographyVue component="p" color="#2B2B2B">
             {{ item.location }}
@@ -22,7 +23,7 @@ defineProps({
           <div class="date">{{ item.date }}</div>
         </div>
       </div>
-      <div>
+      <div class="right-side">
         <TypographyVue component="h4" color="#2B2B2B">
           {{ item.title }}
         </TypographyVue>
@@ -49,6 +50,18 @@ defineProps({
   margin-top: 1.5rem;
   border-bottom: 1.5px solid #f0f0f6;
 }
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: space-between;
+}
 .list-item:last-child {
   border-bottom: none;
 }
@@ -61,10 +74,6 @@ defineProps({
   font-weight: 400;
   font-size: 10px;
   line-height: 100.9%;
-  /* identical to box height, or 10px */
-
-  /* White */
-
   color: #ffffff;
 }
 .row {
