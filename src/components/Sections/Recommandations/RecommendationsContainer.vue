@@ -53,7 +53,12 @@ export default {
     />
   </div>
   <div class="dot-container">
-    <div :key="i" v-for="i in dotsCount" class="dot" v-on:click="goTo(i)" />
+    <div
+      :key="i"
+      v-for="i in dotsCount"
+      :class="`dot ${current === i ? 'active' : 'inactive'}`"
+      v-on:click="goTo(i)"
+    />
   </div>
 </template>
 
@@ -73,5 +78,14 @@ export default {
   height: 10px;
   border-radius: 50%;
   background-color: #ffb400;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.active {
+  background-color: #ff8c00;
+}
+.inactive {
+  background-color: #fff;
 }
 </style>
