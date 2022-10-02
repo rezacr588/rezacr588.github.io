@@ -178,3 +178,29 @@ export const educations = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
   },
 ];
+export const works = [
+  {
+    title: "Bachelor of Science in Computer Science",
+    place: "University of the Philippines",
+    location: "Manila, Philippines",
+    date: "Jan 1016 - Dec 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    place: "University of the Philippines",
+    location: "Manila, Philippines",
+    date: "Jan 1016 - Dec 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    place: "University of the Philippines",
+    location: "Manila, Philippines",
+    date: "Jan 1016 - Dec 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+  },
+];
