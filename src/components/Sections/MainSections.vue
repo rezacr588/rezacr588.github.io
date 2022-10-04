@@ -5,6 +5,7 @@ import ServicesSection from "./ServicesSection.vue";
 import RecommendationsSection from "./RecommendationsSection.vue";
 import EducationSection from "./EducationSection.vue";
 import WorkSection from "./WorkSection.vue";
+import PortfolioSection from "./PortfolioSection.vue";
 </script>
 <template>
   <main>
@@ -14,5 +15,6 @@ import WorkSection from "./WorkSection.vue";
     <RecommendationsSection />
     <EducationSection />
     <WorkSection />
+    <PortfolioSection />
   </main>
 </template>
